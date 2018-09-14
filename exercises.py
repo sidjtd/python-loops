@@ -12,6 +12,8 @@
 # ...
 ##'Number 8, your order is ready.'
 
+for num in range(1,8):
+  print('Number ' + str(num) +', your order is ready.')
 
 #2 Now Serving
 #Create a while loop that will print the following message:
@@ -22,29 +24,43 @@
 # ...
 # 'Now serving number 5.'
 
+ticket = 1
+while ticket < 6:
+  print('Now serving number ' + str(ticket))
+  ticket+=1
 
-#3 3 is a Magic Number
-#Create a while loop that will generate a multiplication table for the number 3 and print out the following:
-# 1 x 3 = 3
-# 2 x 3 = 6
-# 3 x 3 = 9
-# 4 x 3 = 12
-# ...
-# ...
-# ...
-# 9 x 3 = 27
+# #3 3 is a Magic Number
+# #Create a while loop that will generate a multiplication table for the number 3 and print out the following:
+# # 1 x 3 = 3
+# # 2 x 3 = 6
+# # 3 x 3 = 9
+# # 4 x 3 = 12
+# # ...
+# # ...
+# # ...
+# # 9 x 3 = 27
 
+mult = 1
+while (mult < 10):
+  print('3 x ' + str(mult) + ' = ' + str(mult * 3))
+  mult+=1
 
-#4. Uber This!
-# Declare a variable named cars and assign it a list of 5 of your favorite car brands. Next create a for loop that will iterate through the cars list and prints the following: 'My next car will be a red x.' Where x represents each item in the list.
-
+# #4. Uber This!
+# # Declare a variable named cars and assign it a list of 5 of your favorite car brands. Next create a for loop that will iterate through the cars list and prints the following: 'My next car will be a red x.' Where x represents each item in the list.
+cars = ['Tesla', 'Toyota', 'Lambo', 'Corvette', 'Mustang']
+# for each_car in cars:
+#   print(each_car)
 
 #5 Uber This Again
 #Print each item in the above cars list using a while loop.
 
-    
+counter = 0;
+while counter < len(cars):
+  print(cars[counter])
+  counter+=1
+
 #6  No More Tears
-# Create a for loop that will iterate through the cyber attacks list and prints the following: 
+# Create a for loop that will iterate through the cyber attacks list and prints the following:
 #The attack at 0 is Wannacry.
 #The attack at 1 is Petya.
 #The attack at 2 is Locky.
@@ -54,9 +70,15 @@
 
 cyber_attacks = ['Wannacry', 'Petya', 'Locky', 'Krack Attack', 'Sambacry']
 
+for each_attack in cyber_attacks:
+  print('The attack at ' + str(cyber_attacks.index(each_attack)) + ' is ' + each_attack + '.')
 
 #7 Even
-# Declare a variable named even_list and assign it an empty list. Next, write a for loop that will place 25 even numbers starting from 0 into the even_list list. Print the even_list variable to see your results. 
+# Declare a variable named even_list and assign it an empty list. Next, write a for loop that will place 25 even numbers starting from 0 into the even_list list. Print the even_list variable to see your results.
+even_list = []
+for wiggle in range(0, 10, 2):
+  even_list.append(wiggle)
+print(even_list)
 
 
 #8 Sum Up
@@ -64,13 +86,25 @@ cyber_attacks = ['Wannacry', 'Petya', 'Locky', 'Krack Attack', 'Sambacry']
 
 #i.e a number list of 10 will have a sum total of 45
 
+def add_up(num):
+  sum = 0
+  for this_num in range(1, num):
+    sum += this_num
+    print(sum)
+  return sum
+
+print('All added and its now ' + str(add_up(10)))
+
 
 #9 East Coast vs West Coast - A Hip Hop Rivalry
-#The East Coast - West Coast hip hop rivalry was a feud between artist and fans of the East Coast hip hop and West Coast hip hop scenes from the mid to last 1990s. 
+#The East Coast - West Coast hip hop rivalry was a feud between artist and fans of the East Coast hip hop and West Coast hip hop scenes from the mid to last 1990s.
 
 #Your job is to create a function that will loop through the rappers list and place all the odd indexed items in a list named weessst_side and all the even indexed items in a list named east_side. Print your results.
 
 rappers = ['Tupac', 'Biggie', 'Ice Cube', 'Nas', 'Snoop', '50 Cent', 'Nate Dogg', 'Wu Tang Clan', 'Kendrick Lamar']
+
+def west_side(rap):
+
 
 #10 Breaking Up is Easy
 #Create a for loop that will iterate through 10 even numbers (starting from 0) and stop printing at 10.
@@ -103,6 +137,6 @@ zip_codes = [90001,90002,90003,90004,90005,96822,90007,90008,90010,90011,90012,9
 # Fizz Buzz
 
 
-#13 Fizz Buzz Again 
+#13 Fizz Buzz Again
 #Do the same thing again using a while loop.
 

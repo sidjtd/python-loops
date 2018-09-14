@@ -48,7 +48,7 @@ while i < 9:
 #4. Uber This!
 # Declare a variable named cars and assign it a list of 5 of your favorite car brands. Next create a for loop that will iterate through the cars list and prints the following: 'My next car will be a red x.' Where x represents each item in the list.
 
-cars = ['Toyota', 'Tesla', 'BMW', 'Porche', 'Mercedes'] 
+cars = ['Toyota', 'Tesla', 'BMW', 'Porche', 'Mercedes']
 for car in cars:
     print('My next car will be a red ' + car + '.')
 
@@ -60,9 +60,9 @@ while i < len(cars):
     print(cars[i])
     i += 1
 
-    
+
 #6  No More Tears
-# Create a for loop that will iterate through the cyber attacks list and prints the following: 
+# Create a for loop that will iterate through the cyber attacks list and prints the following:
 #The attack at 0 is Wannacry.
 #The attack at 1 is Petya.
 #The attack at 2 is Locky.
@@ -75,7 +75,7 @@ for attack in cyber_attacks:
      print('The attack at ' + str(cyber_attacks.index(attack)) + ' is ' + attack + '.')
 
 #7 Even
-# Declare a variable named even_list and assign it an empty list. Next, write a for loop that will place 25 even numbers starting from 0 into the even_list list. Print the even_list variable to see your results. 
+# Declare a variable named even_list and assign it an empty list. Next, write a for loop that will place 25 even numbers starting from 0 into the even_list list. Print the even_list variable to see your results.
 
 even_list = []
 for number in range(0, 51):
@@ -96,7 +96,7 @@ def add_up(num):
 add_up(10)
 
 #9 East Coast vs West Coast - A Hip Hop Rivalry
-#The East Coast - West Coast hip hop rivalry was a feud between artist and fans of the East Coast hip hop and West Coast hip hop scenes from the mid to last 1990s. 
+#The East Coast - West Coast hip hop rivalry was a feud between artist and fans of the East Coast hip hop and West Coast hip hop scenes from the mid to last 1990s.
 
 #Your job is to create a function that will loop through the rappers list and place all the odd indexed items in a list named weessst_side and all the even indexed items in a list named east_side. Print your results.
 
@@ -162,7 +162,7 @@ for num in range(1, 101):
     else:
         print(str(num))
 
-#13 Fizz Buzz Again 
+#13 Fizz Buzz Again
 #Do the same thing again using a while loop.
 
 count = 0
