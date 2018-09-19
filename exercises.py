@@ -29,8 +29,7 @@ def number_two(ticket_amount):
   while ticket < ticket_amount:
     print('Now serving number ' + str(ticket))
     ticket+=1
-
-number_two(8)
+# number_two(8)
 
 # # #3 3 is a Magic Number
 # # #Create a while loop that will generate a multiplication table for the number 3 and print out the following:
@@ -160,8 +159,9 @@ def print_some_print_others(input_num):
 #13 Fizz Buzz Again
 #Do the same thing again using a while loop.
 
-def print_some_print_others(input_num):
-  for each_num in range(1, input_num):
+def while_print(input_num):
+  each_num = 0
+  while (each_num < input_num):
     if(each_num % 3 == 0 and each_num % 5 != 0 ):
       print('Fizz')
     elif(each_num % 5 == 0 and each_num % 3 != 0 ):
@@ -170,4 +170,5 @@ def print_some_print_others(input_num):
       print('Fizz Buzz')
     else:
       print(each_num)
-print_some_print_others(10)
+    each_num += 1
+while_print(100)
